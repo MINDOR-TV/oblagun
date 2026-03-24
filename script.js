@@ -1,10 +1,10 @@
-// Připraveno pro budoucí dynamické přidávání dlaždic
+// script.js
 
 const cardsContainer = document.getElementById("cards-container");
 
 function addCard(image, link) {
     const col = document.createElement("div");
-    col.className = "col-12 col-sm-6 col-md-4 col-lg-3";
+    col.className = "col-10 col-sm-6 col-md-4 col-lg-3";
 
     col.innerHTML = `
         <a href="${link}" class="card-link">
@@ -17,5 +17,5 @@ function addCard(image, link) {
     cardsContainer.appendChild(col);
 }
 
-// Příklad použití:
-// addCard('https://via.placeholder.com/300', '#');
+// Příklad:
+// addCard('assets/logo1.png', 'page1.html');
