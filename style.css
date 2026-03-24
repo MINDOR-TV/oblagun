@@ -8,16 +8,10 @@ body {
 .background {
     position: fixed;
     inset: 0;
-    background: url('assets/oblagun.png') center/cover no-repeat;
-    z-index: -2;
-}
-
-.background::after {
-    content: \"\";
-    position: absolute;
-    inset: 0;
-    backdrop-filter: blur(8px);
-    background: rgba(0,0,0,0.4);
+    background: url('assets/oblagun.png') center/contain no-repeat;
+    background-color:" #5f7c82;
+    z-index: -1;
+    filter: blur(6px)
 }
 
 .title {
