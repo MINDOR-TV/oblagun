@@ -8,8 +8,9 @@ body {
 .background {
     position: fixed;
     inset: 0;
-    background: url('assets/oblagun.png') center/contain no-repeat;
-    background-color: #405f66;
+    background: 
+        url('assets/oblagun.png') center/contain no-repeat,
+        url('assets/water.png') repeat;
     z-index: -1;
     filter: blur(6px)
 }
